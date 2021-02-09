@@ -55,9 +55,10 @@
 //! [`w5500_ll::net`]: https://docs.rs/w5500-ll/0.5.1/w5500_ll/net/index.html
 #![doc(html_root_url = "https://docs.rs/w5500-ll/0.5.1")]
 #![cfg_attr(docsrs, feature(doc_cfg))]
-#![forbid(unsafe_code)]
-#![forbid(missing_docs)]
 #![cfg_attr(not(feature = "std"), no_std)]
+#![forbid(missing_docs)]
+#![forbid(unsafe_code)]
+#![forbid(unsafe_code)]
 
 #[cfg(feature = "embedded-hal")]
 #[cfg_attr(docsrs, doc(cfg(feature = "embedded-hal")))]
