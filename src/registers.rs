@@ -355,14 +355,14 @@ impl Interrupt {
         self.0 & Self::UNREACH_MASK != 0
     }
 
-    /// Set the destination unreachable
+    /// Set the destination unreachable bit.
     #[must_use = "set_unreach returns a modified Interrupt"]
     pub const fn set_unreach(mut self) -> Self {
         self.0 |= Self::UNREACH_MASK;
         self
     }
 
-    /// Clear the destination unreachable
+    /// Clear the destination unreachable bit.
     #[must_use = "clear_unreach returns a modified Interrupt"]
     pub const fn clear_unreach(mut self) -> Self {
         self.0 &= !Self::UNREACH_MASK;
@@ -389,14 +389,14 @@ impl Interrupt {
         self.0 & Self::PPPOE_MASK != 0
     }
 
-    /// Set the PPPoE connection close
+    /// Set the PPPoE connection close bit.
     #[must_use = "set_pppoe returns a modified Interrupt"]
     pub const fn set_pppoe(mut self) -> Self {
         self.0 |= Self::PPPOE_MASK;
         self
     }
 
-    /// Clear the PPPoE connection close
+    /// Clear the PPPoE connection close bit.
     #[must_use = "clear_pppoe returns a modified Interrupt"]
     pub const fn clear_pppoe(mut self) -> Self {
         self.0 &= !Self::PPPOE_MASK;
