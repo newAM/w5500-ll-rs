@@ -1,5 +1,5 @@
 //! Variable data length implementation of the [`Registers`] trait using the
-//! [`embedded-hal`] blocking SPI trait, and a fallible GPIO.
+//! [`embedded-hal`] blocking SPI trait, and a fallible GPIO pin.
 //!
 //! This uses the W5500 variable data length mode (VDM).
 //! In VDM mode the SPI frame data length is determined by the chip select pin.
